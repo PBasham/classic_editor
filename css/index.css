@@ -1,3 +1,11 @@
+/* Variables ============================== */
+:root {
+    --color-borders: rgb(203,206,209);
+
+    --test-outline: palevioletred;
+}
+
+/* ======================================== */
 /* ==== CSS RESET ==================== */
 *, *::before, *::after { box-sizing: border-box; }
 * {
@@ -10,4 +18,25 @@ body { min-height: 100vh; }
 img, picture, svg, video {
     display: block;
     max-width: 100%;
+}
+/* ======================================== */
+
+#editor-wrapper {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 3em auto;
+    min-height: 100px;
+    width: clamp(375px, 100%, 1000px);
+    border: 1px solid var(--color-borders);
+    
+}
+#controle-bar {
+    padding: 5px;
+    min-height: 45px;
+    border-bottom: 1px solid var(--color-borders);
+}
+#editor-div {}
+#editor {
+    padding: 20px;
 }
