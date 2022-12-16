@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,21 +11,25 @@
     <!-- css -------------------------------------------------- -->
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <!-- ToDo
         * [] editor-Wrapper
         * [] controle-bar
         * [] editor-div
      -->
-     <div id="editor-wrapper">
+    <div id="editor-wrapper">
         <div id="controle-bar" class="flex-start"></div>
-        <div id="editor-div" >
-            <div id="editor" contenteditable="true" >
-
+        <div id="editor-div">
+            <div id="editor" contenteditable="true">
+                <p id="starter-paragraph">
+                    <br data-cke-filler="true">
+                </p>
             </div>
         </div>
-     </div>
-    
+    </div>
+
     <script src="js/index.js"></script>
 </body>
+
 </html>
